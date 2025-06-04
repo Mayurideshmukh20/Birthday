@@ -70,25 +70,23 @@ Happy Birthday, Rishiii. I love you endlessly and always.💫♾️😘
 
   <div class="section">
     <h2>🎁 Click for a Sweet Surprise</h2>
-    <button class="button" onclick="alert('You get a virtual hug 🤗 and 100 kisses 😘😘😘! and One wish granted. Just say the word."')">Open</button>
+    <button class="button" onclick="alert('You get a virtual hug 🤗 and 100 kisses 😘😘😘! and One wish granted. Just say the word.')">Open</button>
   </div>
 
   <div class="section" style="background-color: #fff8f0">
     <h2>📸 Our Memories</h2>
     <div class="gallery">
-      <img src="images/New start.jpeg" alt="Memory 1">
+      <img src="Start of our new journey.jpg" alt="Memory 1">
       <p>Our very first good picture together 💕 </p>
-      <img src="images/The bhand usss.jpeg" alt="Memory 2">
+      <img src="The bhand usss.jpg" alt="Memory 2">
       <p>The bhand uss🤭.. The day with Mixed Emotions</p>
-      <img src="images/Sleepy uu.jpeg" alt="Memory 3">
+      <img src="Sleepy uu.jpg" alt="Memory 3">
       <p>That quiet moment, all mine..😍</p>
     </div>
   </div>
 
 
-
- 
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -147,7 +145,7 @@ Happy Birthday, Rishiii. I love you endlessly and always.💫♾️😘
 </head>
 <body>
 
-<h2>💌 Open When Notes</h2>
+<h1>💌 Open When Notes</h1>
 <p>Click on a note to reveal the message 💖</p>
 
 <div class="note-container">
@@ -187,15 +185,26 @@ Happy Birthday, Rishiii. I love you endlessly and always.💫♾️😘
         Open when you need motivation
         <div class="message">You’ve done harder things before. And you’ve still got me cheering for you.</div>
     </div>
-    <div class="note" onclick="toggleMessage(this)">
+        <div class="note" onclick="toggleMessage(this)">
         Open when you want to feel loved
         <div class="message">Every word I ever said (sometimes the unsaid words😜), every smile I gave all meant 'I love you.'</div>
     </div>
-    
-     <div class="section" style="background-color: #fff0f5">
+</div>
+
+
+
+<script>
+    function toggleMessage(note) {
+        const msg = note.querySelector('.message');
+        msg.style.display = msg.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+
+<div class="section" style="background-color: #fff0f5">
     <h2>💖 The End? Never.</h2>
     <p>This is just the beginning of many more beautiful birthdays we'll celebrate together. I love you!</p>
   </div>
-</div>
+
 </body>
 </html>
